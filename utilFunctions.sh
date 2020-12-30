@@ -7,6 +7,13 @@ installFonts()
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
 }
 
+gnomeTerminalSetup()
+{
+    wget -P ~/Downloads https://raw.githubusercontent.com/camiloaromero23/systemInitialization/main/configFiles/gnome_terminal_settings_backup.txt
+    dconf dconf load /org/gnome/terminal/ < ~/Downloads/gnome_terminal_settings_backup.txt
+    rm ~/Downloads/gnome_terminal_settings_backup.txt
+}
+
 installGeneralSoftware()
 {
     softwareToInstall=( "curl" "git" "neovim" "neofetch" "net-tools" "nmap" "python3" "python3-pip" "wget" "zsh")

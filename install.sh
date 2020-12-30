@@ -7,6 +7,7 @@ wget -P ~/Downloads https://raw.githubusercontent.com/camiloaromero23/systemInit
 . ~/Downloads/utilFunctions.sh
 
 installFonts
+gnomeTerminalSetup
 installGeneralSoftware
 installChrome
 installVSCode
