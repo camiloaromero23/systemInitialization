@@ -42,6 +42,13 @@ installPython()
     pip3 install pipenv
 }
 
+neofetchSetup()
+{
+    mkdir -p ~/.config/neofetch
+    wget -p ~/.config/neofetch https://raw.githubusercontent.com/camiloaromero23/systemInitialization/main/configFiles/neofetchConfig.conf
+    mv neofetchConfig.conf config.conf
+}
+
 installOhMyZsh()
 {    
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

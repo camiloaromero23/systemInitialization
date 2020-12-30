@@ -11,6 +11,7 @@ installChrome
 installVSCode
 installNodeJS
 installPython
+neofetchSetup
 installOhMyZsh
 
 rm ~/Downloads/utilFunctions.sh
