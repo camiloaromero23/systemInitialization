@@ -11,5 +11,6 @@ installChrome
 installVSCode
 installNodeJS
 installPython
+installOhMyZsh
 
 rm ~/Downloads/utilFunctions.sh
