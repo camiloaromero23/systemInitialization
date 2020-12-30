@@ -1,3 +1,12 @@
+installFonts()
+{
+    wget -P ~/Downloads https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
+
+    tar -xf ~/Downloads/JetBrainsMono.zip /usr/share/fonts
+
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
+}
+
 installGeneralSoftware()
 {
     softwareToInstall=( "curl" "git" "neovim" "neofetch" "net-tools" "nmap" "python3" "python3-pip" "wget" "zsh")
@@ -57,4 +66,11 @@ installOhMyZsh()
     wget -P ~ https://raw.githubusercontent.com/camiloaromero23/systemInitialization/main/configFiles/.z.sh
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     source ~/.zshrc
+}
+
+neovimSetup()
+{
+    mkdir -p ~/.config/nvim
+    sudo apt install fzf ripgrep universal-ctags silversearcher-ag fd-find
+    git clone https://github.com/camiloaromero23/nvim.git ~/.config/nvim
 }
