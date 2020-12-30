@@ -23,6 +23,14 @@ installGeneralSoftware()
     done
 }
 
+gitSetup()
+{
+    git config --global user.name "Camilo Romero"
+    git config --global user.email camiloaromero23@gmail.com
+    wget -P ~ https://raw.githubusercontent.com/camiloaromero23/systemInitialization/main/configFiles/.gitignore_global
+    git config --global core.excludesfile ~/.gitignore_global
+}
+
 installDebPackage()
 {
     wget -P ~/Downloads $1

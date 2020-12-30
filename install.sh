@@ -9,6 +9,7 @@ wget -P ~/Downloads https://raw.githubusercontent.com/camiloaromero23/systemInit
 installFonts
 gnomeTerminalSetup
 installGeneralSoftware
+gitSetup
 installChrome
 installVSCode
 installNodeJS
