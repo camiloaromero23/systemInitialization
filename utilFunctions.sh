@@ -97,3 +97,6 @@ neovimSetup()
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
     git clone https://github.com/camiloaromero23/nvim.git ~/.config/nvim
 }
+# TODO: Fix neofetch file
+# TODO: Fix Unzip JetBrainsMono font
+# TODO: Fix NodeJS installation on zsh
