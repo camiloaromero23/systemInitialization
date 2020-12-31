@@ -27,7 +27,7 @@ installGeneralSoftware()
     softwareToInstall=( "curl" "git" "neovim" "neofetch" "net-tools" "nmap" "python3" "python3-pip" "unzip" "wget" "zsh")
     for i in "${softwareToInstall[@]}"
     do
-        echo "Installing $i"
+        echo "$(tput setaf 2)$(tput bold)Installing $i$(tput sgr 0)"
         sudo apt install -y $i
     done
 }
