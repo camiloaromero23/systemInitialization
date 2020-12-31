@@ -114,3 +114,10 @@ neovimSetup()
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
     git clone https://github.com/camiloaromero23/nvim.git ~/.config/nvim
 }
+
+
+webDevelopmentSetup()
+{
+    printMessage "Setting up web development environment..."
+    npm install -g @angular/cli @vue/cli @ionic/cli firebase-tools
+}

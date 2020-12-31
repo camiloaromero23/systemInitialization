@@ -17,5 +17,6 @@ installPython
 neofetchSetup
 neovimSetup
 installOhMyZsh
+webDevelopmentSetup
 
 rm ~/Downloads/utilFunctions.sh
