@@ -8,7 +8,7 @@ installFonts()
     printMessage "Installing Fonts..."
     wget -P ~/Downloads https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
 
-    unzip ~/Downloads/JetBrainsMono.zip -d /usr/share/fonts/JetBrainsMono
+    sudo unzip ~/Downloads/JetBrainsMono.zip -d /usr/share/fonts/JetBrainsMono
     rm ~/Downloads/JetBrainsMono.zip
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
 }
