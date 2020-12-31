@@ -15,7 +15,7 @@ installVSCode
 installNodeJS
 installPython
 neofetchSetup
-installOhMyZsh
 neovimSetup
+installOhMyZsh
 
 rm ~/Downloads/utilFunctions.sh

@@ -56,8 +56,7 @@ installVSCode()
 
 installNodeJS()
 {
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | zsh
-zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 nvm install lts/erbium
 nvm install --lts
 }
@@ -71,11 +70,12 @@ neofetchSetup()
 {
     mkdir -p ~/.config/neofetch
     wget -p ~/.config/neofetch https://raw.githubusercontent.com/camiloaromero23/systemInitialization/main/configFiles/neofetchConfig.conf
-    mv neofetchConfig.conf config.conf
+    mv neofetchConfig.conf ~/.config/neofetch/config.conf
 }
 
 installOhMyZsh()
 {    
+    spd-say 'give me the password'
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     rm ~/.zshrc
     wget -P ~ https://raw.githubusercontent.com/camiloaromero23/systemInitialization/main/configFiles/.zshrc
