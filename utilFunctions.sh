@@ -113,12 +113,12 @@ installOhMyZsh()
     wget -P ~ https://raw.githubusercontent.com/camiloaromero23/systemInitialization/main/configFiles/.zshrc
     wget -P ~ https://raw.githubusercontent.com/camiloaromero23/systemInitialization/main/configFiles/.z.sh
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-    source ~/.zshrc
 }
 
 neovimSetup()
 {
     printMessage "Setting up Neovim..."
+    source ~/.bashrc
     mkdir -p ~/.config/nvim
     sudo apt install fzf ripgrep universal-ctags silversearcher-ag fd-find
     npm install -g neovim
