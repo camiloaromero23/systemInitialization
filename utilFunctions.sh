@@ -119,5 +119,5 @@ neovimSetup()
 webDevelopmentSetup()
 {
     printMessage "Setting up web development environment..."
-    npm install -g @angular/cli @vue/cli @ionic/cli firebase-tools
+    npm install -g @angular/cli firebase-tools @ionic/cli nodemon @vue/cli
 }
