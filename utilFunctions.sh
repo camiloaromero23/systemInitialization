@@ -17,7 +17,7 @@ gnomeTerminalSetup()
 {
     printMessage "Setting up gnome-terminal"
     wget -P ~/Downloads https://raw.githubusercontent.com/camiloaromero23/systemInitialization/main/configFiles/gnome_terminal_settings_backup.txt
-    dconf dconf load /org/gnome/terminal/ < ~/Downloads/gnome_terminal_settings_backup.txt
+    dconf load /org/gnome/terminal/ < ~/Downloads/gnome_terminal_settings_backup.txt
     rm ~/Downloads/gnome_terminal_settings_backup.txt
 }
 
