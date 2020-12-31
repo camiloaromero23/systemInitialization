@@ -17,7 +17,7 @@ installNodeJS
 installPython
 neofetchSetup
 neovimSetup
-installOhMyZsh
 webDevelopmentSetup
+installOhMyZsh
 
 rm ~/Downloads/utilFunctions.sh
