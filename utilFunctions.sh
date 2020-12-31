@@ -2,8 +2,8 @@ installFonts()
 {
     wget -P ~/Downloads https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
 
-    tar -xf ~/Downloads/JetBrainsMono.zip /usr/share/fonts
-
+    unzip ~/Downloads/JetBrainsMono.zip -d /usr/share/fonts/JetBrainsMono
+    rm ~/Downloads/JetBrainsMono.zip
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
 }
 
@@ -16,7 +16,7 @@ gnomeTerminalSetup()
 
 installGeneralSoftware()
 {
-    softwareToInstall=( "curl" "git" "neovim" "neofetch" "net-tools" "nmap" "python3" "python3-pip" "wget" "zsh")
+    softwareToInstall=( "curl" "git" "neovim" "neofetch" "net-tools" "nmap" "python3" "python3-pip" "unzip" "wget" "zsh")
     for i in "${softwareToInstall[@]}"
     do
         echo "Installing $i"
@@ -97,6 +97,6 @@ neovimSetup()
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
     git clone https://github.com/camiloaromero23/nvim.git ~/.config/nvim
 }
+
 # TODO: Fix neofetch file
-# TODO: Fix Unzip JetBrainsMono font
 # TODO: Fix NodeJS installation on zsh
