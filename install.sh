@@ -11,6 +11,7 @@ installGeneralSoftware
 installFonts
 gitSetup
 installChrome
+installDocker
 installVSCode
 installNodeJS
 installPython
