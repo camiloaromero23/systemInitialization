@@ -72,7 +72,7 @@ installPython()
 neofetchSetup()
 {
     mkdir -p ~/.config/neofetch
-    wget -p ~/.config/neofetch https://raw.githubusercontent.com/camiloaromero23/systemInitialization/main/configFiles/neofetchConfig.conf
+    wget -P ~/.config/neofetch https://raw.githubusercontent.com/camiloaromero23/systemInitialization/main/configFiles/neofetchConfig.conf
     mv ~/.config/neofetch/neofetchConfig.conf ~/.config/neofetch/config.conf
 }
 
@@ -98,5 +98,4 @@ neovimSetup()
     git clone https://github.com/camiloaromero23/nvim.git ~/.config/nvim
 }
 
-# TODO: Fix neofetch file
 # TODO: Fix NodeJS installation on zsh
