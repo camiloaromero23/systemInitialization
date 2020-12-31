@@ -69,6 +69,7 @@ installNodeJS()
 {
     printMessage "Installing NodeJS..."
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | zsh
     export NVM_DIR="/home/$USER/.nvm"
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
     [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -113,5 +114,3 @@ neovimSetup()
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
     git clone https://github.com/camiloaromero23/nvim.git ~/.config/nvim
 }
-
-# TODO: Fix NodeJS installation on zsh
