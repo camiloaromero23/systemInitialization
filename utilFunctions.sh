@@ -17,8 +17,9 @@ gnomeTerminalSetup()
 installGeneralSoftware()
 {
     softwareToInstall=( "curl" "git" "neovim" "neofetch" "net-tools" "nmap" "python3" "python3-pip" "wget" "zsh")
-    for i in "$softwareToInstall[@]"
+    for i in "${softwareToInstall[@]}"
     do
+        echo "Installing $i"
         sudo apt install -y $i
     done
 }
