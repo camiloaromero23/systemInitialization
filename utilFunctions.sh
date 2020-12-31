@@ -70,7 +70,7 @@ neofetchSetup()
 {
     mkdir -p ~/.config/neofetch
     wget -p ~/.config/neofetch https://raw.githubusercontent.com/camiloaromero23/systemInitialization/main/configFiles/neofetchConfig.conf
-    mv neofetchConfig.conf ~/.config/neofetch/config.conf
+    mv ~/.config/neofetch/neofetchConfig.conf ~/.config/neofetch/config.conf
 }
 
 installOhMyZsh()
