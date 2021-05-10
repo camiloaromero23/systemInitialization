@@ -10,7 +10,6 @@ gnomeTerminalSetup
 installGeneralSoftware
 installFonts
 gitSetup
-installChrome
 installDocker
 installVSCode
 installNodeJS
