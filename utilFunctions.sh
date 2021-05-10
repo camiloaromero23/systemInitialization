@@ -41,19 +41,6 @@ gitSetup()
     git config --global core.excludesfile ~/.gitignore_global
 }
 
-installDebPackage()
-{
-    wget -P ~/Downloads $1
-    sudo apt install -y ~/Downloads/$2
-    rm ~/Downloads/$2
-}
-
-installChrome()
-{
-    printMessage "Installing Chrome..."
-    installDebPackage "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb" "google-chrome-stable_current_amd64.deb"
-}
-
 installDocker()
 {
     printMessage "Installing Docker..."
@@ -86,7 +73,6 @@ installNodeJS()
     export NVM_DIR="/home/$USER/.nvm"
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
     [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-    nvm install lts/erbium
     nvm install --lts
 }
 
@@ -132,5 +118,5 @@ neovimSetup()
 webDevelopmentSetup()
 {
     printMessage "Setting up web development environment..."
-    npm install -g @angular/cli firebase-tools @ionic/cli nodemon @vue/cli
+    npm install -g nodemon
 }
